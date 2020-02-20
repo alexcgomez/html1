@@ -11,6 +11,9 @@
     <main>
         <h1>Ejemplos de tags HTML</h1>
         <article>
+
+
+            <!-- Sección sobre tags -->
             <section>
                 <h3>Tags a nivel de</h3>
                 <p>El tag &lt;p&gt;es para párrafos. Después de esta línea, saltamos<br>
@@ -37,23 +40,79 @@
             </section>
 
             <!-- Sección sobre listas -->
-            Una lista "ordenada":
-            <ol>
-                <li value="0">Primero</li>
-                <li>Segundo</li>
-                <li>Tercero</li>
-            </ol>
-            Una lista <em>desordenada</em>:
-            <ul>
-                <li>Item 1</li>
-                <li>Item 2</li>
-                <li>Otra lista
-                    <ol type="I">
-                        <li>a</li>
-                        <li>b</li>
-                    </ol>
-                </li>
-            </ul>
+            <section>
+                Una lista "ordenada":
+                <ol>
+                    <li value="0">Primero</li>
+                    <li>Segundo</li>
+                    <li>Tercero</li>
+                </ol>
+                Una lista <em>desordenada</em>:
+                <ul>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Otra lista
+                        <ol type="I">
+                            <li>a</li>
+                            <li>b</li>
+                        </ol>
+                    </li>
+                </ul>
+
+            </section>
+
+            <!-- Sección sobre tablas -->
+            <section>
+                <table>
+                    <!--Cuando ponemos un row, al poner el siguiente, se cierra el anterior, por lo tanto, se pueden omitir los tags de cierre -->
+                    <thead>
+                        <!-- Por si la tabla es más compleja disponemos de thead, tbody y tfoot-->
+                        <tr>
+                            <th>Número</th>
+                            <th>Letra</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Uno</td>
+                        </tr>
+                        <tr>
+                            <td>2
+                            <td>Dos
+                        </tr>
+                        <tr>
+                            <td>3
+                            <td>Tres
+                        </tr>
+                    </tbody>
+                </table>
+                <p>Tabla con <code>rowspan</code> y <code>colspan</code></p>
+                <table border="1">
+                    <tr>
+                        <th rowspan="2">Fruit</th>
+                        <th colspan="2">Price</th>
+                    </tr>
+                    <tr>
+                        <td>EUR</td>
+                        <td>USD</td>
+                    </tr>
+                    <tr>
+                        <td>Kiwi</td>
+                        <td>5.5</td>
+                        <td>6.1</td>
+                    </tr>
+                    <tr>
+                        <td>Orange</td>
+                        <td>4</td>
+                        <td>5</td>
+                    </tr>
+                </table>
+            </section>
+
+            <!-- Sección sobre tablas -->
+            
+
         </article>
     </main>
 </body>
